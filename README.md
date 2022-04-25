@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @rsoulard
 - 👀 I’m interested in software and game development.
-- 🌱 I’m currently learning better principles for software development.
+- 🌱 I’m currently learning C++ and graphics rendering.
 - 💞️ I’m looking to collaborate on games.
 - 📫 How to reach me @scrapmetal134 on Twitter or scrapmetal134#4606 on Discord
 
