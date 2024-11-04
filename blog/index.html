@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /blog/
 title: Blog
 subtitle: Rambling and Rants
 ---
@@ -22,26 +21,18 @@ subtitle: Rambling and Rants
 </div>
 
 <nav>
-    <ul class="pagination justify-content-center">
+    <ul class="pagination justify-content-center border-space">
         {% if paginator.previous_page %}
         <li class="page-item">
-            <a class="page-link" href="{{ paginator.previous_page_path }}">Newer</a>
-        </li>
-        {% else %}
-        <li class="page-item disabled">
-            <a class="page-link" href="" tabindex="-1">Newer</a>
+            <a class="page-link" href="{{ paginator.previous_page_path }}">← Previous</a>
         </li>
         {% endif %}
         <li class="page-item disabled">
-            <a class="page-link" href="">{{ paginator.page }} of {{ paginator.total_pages }}</a>
+            <a class="page-link" href="">Page {{ paginator.page }} of {{ paginator.total_pages }}</a>
         </li>
         {% if paginator.next_page %}
         <li class="page-item">
-            <a class="page-link" href="{{ paginator.next_page_path }}">Older</a>
-        </li>
-        {% else %}
-        <li class="page-item disabled">
-            <a class="page-link" href="" tabindex="-1">Older</a>
+            <a class="page-link" href="{{ paginator.next_page_path }}">Next →</a>
         </li>
         {% endif %}
     </ul>
