@@ -1,0 +1,24 @@
+<script>
+    window.onload = setNavLinkActive;
+    const regex = /^\/(.*?)\//
+
+    function setNavLinkActive() {
+        var pathName = window.location.pathname.match(regex);
+        var navLinks = document.querySelectorAll(`a[href='/${pathName != null ? pathName[1] : ''}']`);
+        navLinks[0].className += " active";
+    }
+</script>
+
+<nav class="navbar navbar-expand-sm bg-eggshell">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link ps-0" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/blog">Blog</a>
+            <!-- <a class="nav-link" href="/projects">Projects</a> -->
+        </div>
+    </div>
+</nav>

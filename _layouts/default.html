@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+    {%- include head.html -%}
+    <body>
+        <div class="container">
+            {%- include navbar.html -%}
+            <div class="py-2"></div>
+            <h1 class="display-1 text-space">{{page.title}}</h1>
+            <hr class="bar">
+            <h4 class="text-space"><i>{{page.subtitle}}</i></h4>
+            {{ content }}
+        </div>  
+    </body>
+</html>
