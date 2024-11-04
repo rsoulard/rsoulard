@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @rsoulard
 - 👀 I’m interested in software and game development.
-- 🌱 I’m currently learning C++ and graphics rendering.
+- 🌱 I’m currently learning rust and graphics rendering.
 - 💞️ I’m looking to collaborate on games.
-- 📫 How to reach me @scrapmetal134 on Twitter or scrapmetal134#4606 on Discord
+- 📫 How to reach me @scrapmetal134 on Discord
 
 <!---
 rsoulard/rsoulard is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
