@@ -4,12 +4,12 @@ title: Blog
 subtitle: Rambling and Rants
 ---
 
-<div class="container border border-space border-2 my-3">
+<div class="container border border-2 my-3">
     <div class="row bg-space text-center pt-1">
         <h5 class="text-eggshell"><strong>BLOG POSTS</strong></h5>
     </div>
     <div class="row">
-        <div class="col border-space take-one">
+        <div class="col take-one">
             {% for post in paginator.posts %}
             <a href="{{post.url}}" class="row py-2 clickable bg-eggshell">
                 <p><strong>{{ post.title | escape }}</strong></p>
@@ -21,7 +21,7 @@ subtitle: Rambling and Rants
 </div>
 
 <nav>
-    <ul class="pagination justify-content-center border-space">
+    <ul class="pagination justify-content-center">
         {% if paginator.previous_page %}
         <li class="page-item">
             <a class="page-link" href="{{ paginator.previous_page_path }}">← Previous</a>

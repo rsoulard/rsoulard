@@ -3,10 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 @import "bootstrap/functions";
 @import "bootstrap/variables";
-@import "bootstrap/mixins";
-@import "code-highlighting/monokai.scss";
 
-$theme-colors:map-merge($theme-colors, (
+$theme-colors: map-merge($theme-colors, (
     'alabaster': #e3dFd6,
     'eggshell': #f1ecd9,
     'cedar': #db504a,
@@ -30,6 +28,39 @@ $pagination-focus-bg:               map-get($theme-colors, 'eggshell');
 $pagination-disabled-color:         map-get($theme-colors, 'space');
 $pagination-disabled-border-color:  map-get($theme-colors, 'space');
 $pagination-disabled-bg:            map-get($theme-colors, 'alabaster');
+
+$border-color:                      map-get($theme-colors, 'space');
+
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+@import "code-highlighting/monokai.scss";
+
+$utilities: map-merge(
+  $utilities, 
+  (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+    "border-top": map-merge(
+      map-get($utilities, "border-top"),
+      ( responsive: true ),
+    ),
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      ( responsive: true ),
+    ),
+    "border-bottom": map-merge(
+      map-get($utilities, "border-bottom"),
+      ( responsive: true ),
+    ),
+    "border-start": map-merge(
+      map-get($utilities, "border-start"),
+      ( responsive: true ),
+    ),
+  )
+);
 
 @import "bootstrap/bootstrap";
 
