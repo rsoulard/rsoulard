@@ -125,14 +125,23 @@ $background: #2b2d42;
   .gi {
     color: #a6e22e;
   }
+
+  pre {
+    background-color: "#282C34";
+    color: whitesmoke;
+    margin: 0px;
+    padding-right: 5px;
+    font-size: 1rem;
+  
+    .lineno {
+      margin-right: 5px;
+      padding-left: 5px;
+      border-right: 1px solid #f1ecd9;
+    }
+  }
 }
 
 code{
   background-color: "#282C34";
   color: whitesmoke;
-}
-pre {
-  background-color: "#282C34";
-  color: whitesmoke;
-  margin: 0px 5px;
 }
