@@ -28,7 +28,6 @@ twitter_username: scrapmetal134
 github_username:  rsoulard
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
