@@ -70,6 +70,12 @@ h6 {
     font-style: italic;
 }
 
+@media (max-width: map.get(variables.$breakpoints, "sm")) {
+    .subtitle {
+        font-size: 1.3rem;
+    }
+}
+
 p {
     font-family: $font-monospaced;
     font-optical-sizing: auto;

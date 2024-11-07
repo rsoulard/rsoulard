@@ -1,0 +1,6 @@
+@use "sass:map";
+@use "variables";
+
+.footer {
+    margin: variables.$spacer 0;
+}
