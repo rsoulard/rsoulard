@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "colors";
+
+.pagination > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    
+    > li {
+        padding: 8px;
+        border: 2px solid colors.$foreground-color;
+        border-right: none;
+
+        a {
+            color: colors.$foreground-color;
+        }
+    }
+
+    > li:last-child {
+        border-right: 2px solid colors.$foreground-color;
+    }
+
+    > li.no-interaction {
+        a {
+            color: colors.$foreground-color;
+            text-decoration: none;
+        }
+    }
+}

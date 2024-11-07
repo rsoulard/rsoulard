@@ -1,0 +1,21 @@
+@mixin flex {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}

@@ -1,0 +1,28 @@
+@forward "container";
+@forward "flex";
+@forward "colors";
+@forward "typography";
+@forward "code";
+@forward "grid";
+@forward "take-one";
+@forward "navigation";
+@forward "pagination";
+@forward "bar";
+
+@use "colors";
+
+body {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.clickable strong {
+    text-decoration: underline;
+}
+
+.clickable:hover strong {
+    color: colors.$hover-color;
+}

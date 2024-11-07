@@ -1,0 +1,20 @@
+@use "sass:map";
+
+$theme-colors: (
+    'alabaster': #e3dFd6,
+    'eggshell': #f1ecd9,
+    'cedar': #db504a,
+    'space': #2b2d42,
+    'blue': #118ab2,
+    'naples': #f0d642
+);
+
+$foreground-color: map.get($theme-colors, "space");
+$background-color: map.get($theme-colors, "eggshell");
+
+$inactive-color:   rgba(map.get($theme-colors, "space"), 0.65);
+$hover-color:      map.get($theme-colors, "blue");
+
+body {
+    background-color: $background-color
+}

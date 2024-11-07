@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "colors";
+
+.bar {
+    border: 0;
+    border-top-color: map.get(colors.$theme-colors, 'space');
+    border-top: 1rem solid;
+    margin: 1rem 0;
+    opacity: 1;
+}

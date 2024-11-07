@@ -1,0 +1,22 @@
+@use "colors";
+@use "variables";
+
+.navigation {
+    margin: variables.$spacer 0;
+    display: flex;
+    flex-basis: auto;
+
+    > a {
+        display: block;
+        padding: 8px;
+        color: colors.$inactive-color;
+    }
+
+    > a:first-child {
+        padding-left: 0;
+    }
+
+    a.active {
+        color: colors.$foreground-color
+    }
+}

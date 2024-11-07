@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "variables";
+
+/// The minimum width the screen must be to fall into the given breakpoint.
+@function breakpoint-minimum-width($breakpoint, $breakpoints: variables.$breakpoints) {
+    @return map.get($breakpoints, $breakpoint);
+}
+
+@mixin breakpoint-and-up($breakpoint, $breakpoints: variables.$breakpoints) {
+    $minimum-width: breakpoint-minimum-width($breakpoint, $breakpoints);
+
+    @if $minimum-width != 0 {
+        @media (min-width: $minimum-width) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}

@@ -1,0 +1,44 @@
+@use "sass:map";
+@use "colors";
+@use "variables";
+
+.take-one {
+    margin: variables.$spacer 0;
+    background-color: map.get(colors.$theme-colors, "space");
+
+    .header {
+        color: map.get(colors.$theme-colors, "eggshell");
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+
+    .body {
+        padding: 2px;
+        padding-top: none;
+
+        > a {
+            padding: 8px 0px;
+            display: block;
+            color: colors.$foreground-color;
+            background-color: colors.$background-color;
+            text-decoration: none;
+            border-top: 1px dashed  map.get(colors.$theme-colors, 'space');
+            border-bottom: 1px dashed  map.get(colors.$theme-colors, 'space');
+        }
+    
+        > a:first-child {
+            border-top: none;
+        }
+    
+        > a:last-child {
+            border-bottom: none;
+        }
+    
+        > a:hover {
+            border: 1px dashed  map.get(colors.$theme-colors, 'space');
+            transition: all .3s ease-in-out;
+            transform: translate3d(5px, -5px, 0px);
+            box-shadow: -5px 5px  map.get(colors.$theme-colors, 'alabaster');
+        }
+    }
+}

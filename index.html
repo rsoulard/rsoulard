@@ -3,19 +3,21 @@ layout: default
 title: Ryan Soulard
 subtitle: Professional Software Developer
 ---
-<div class="container border border-2 mt-3">
-    <div class="row bg-space text-center pt-1">
-        <h5 class="text-eggshell"><strong>EXPERIENCE</strong></h5>
+<div class="grid">
+    <div class="header text-center">
+        <h5><strong>EXPERIENCE</strong></h5>
     </div>
-    <div class="row">
-        <div class="col-sm border-end-sm">
+    <div class="body">
+        <div class="cell flex">
             <div class="row">
                 <p><strong>Current Position</strong></p>
             </div>
-            <div class="row text-center font-monospace">
+            <div class="row text-center">
                 <p>Software Architect at Universal Logistics</p>
             </div>
-            <div class="row border-top">
+        </div>
+        <div class="cell">
+            <div class="row">
                 <p><strong>Former Positions</strong></p>
             </div>
             <div class="row text-center font-monospace">
@@ -25,14 +27,16 @@ subtitle: Professional Software Developer
                 <p>Software Developer at Tyler Technologies</p>
             </div>
         </div>
-        <div class="col-sm">
-            <div class="row border-top border-sm-0">
+        <div class="cell">
+            <div class="row">
                 <p><strong>Programming Languages</strong></p>
             </div>
             <div class="row text-center font-monospace">
                 <p>C#, Rust, TypeScript, JavaScript and SQL</p>
             </div>
-            <div class="row border-top">
+        </div>
+        <div class="cell">
+            <div class="row">
                 <p><strong>Tools and Frameworks</strong></p>
             </div>
             <div class="row font-monospace">
@@ -65,18 +69,16 @@ subtitle: Professional Software Developer
     </div>
 </div>
 
-<div class="container border border-2 my-3">
-    <div class="row bg-space text-center pt-1">
-        <h5 class="text-eggshell"><strong>LATEST POSTS</strong></h5>
+<div class="take-one">
+    <div class="header">
+        <h5><strong>LATEST POSTS</strong></h5>
     </div>
-    <div class="row">
-        <div class="col take-one">
-            {% for post in site.posts limit:5 %}
-            <a href="{{post.url}}" class="row py-2 clickable bg-eggshell">
-                <p><strong>{{ post.title | escape }}</strong></p>
-                <span class="font-monospace">{{ post.excerpt }}</span>
-            </a>
-            {% endfor %}
-        </div>
+    <div class="body">
+        {% for post in site.posts limit:5 %}
+        <a href="{{post.url}}" class="clickable">
+            <p><strong>{{ post.title | escape }}</strong></p>
+            <span class="font-monospace">{{ post.excerpt }}</span>
+        </a>
+        {% endfor %}
     </div>
 </div>

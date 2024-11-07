@@ -4,35 +4,33 @@ title: Blog
 subtitle: Rambling and Rants
 ---
 
-<div class="container border border-2 my-3">
-    <div class="row bg-space text-center pt-1">
-        <h5 class="text-eggshell"><strong>BLOG POSTS</strong></h5>
+<div class="take-one">
+    <div class="header">
+        <h5><strong>BLOG POSTS</strong></h5>
     </div>
-    <div class="row">
-        <div class="col take-one">
-            {% for post in paginator.posts %}
-            <a href="{{post.url}}" class="row py-2 clickable bg-eggshell">
-                <p><strong>{{ post.title | escape }}</strong></p>
-                <span class="font-monospace">{{ post.excerpt }}</span>
-            </a>
-            {%- endfor -%}
-        </div>
+    <div class="body">
+        {% for post in paginator.posts %}
+        <a href="{{post.url}}" class="clickable">
+            <p><strong>{{ post.title | escape }}</strong></p>
+            <p class="font-monospace">{{ post.excerpt }}</p>
+        </a>
+        {%- endfor -%}
     </div>
 </div>
 
-<nav>
-    <ul class="pagination justify-content-center">
+<nav class="pagination">
+    <ul>
         {% if paginator.previous_page %}
-        <li class="page-item">
-            <a class="page-link" href="{{ paginator.previous_page_path }}">← Previous</a>
+        <li>
+            <a class="clickable" href="{{ paginator.previous_page_path }}"><strong>← Previous</strong></a>
         </li>
         {% endif %}
-        <li class="page-item disabled">
+        <li class="no-interaction">
             <a class="page-link" href="">Page {{ paginator.page }} of {{ paginator.total_pages }}</a>
         </li>
         {% if paginator.next_page %}
-        <li class="page-item">
-            <a class="page-link" href="{{ paginator.next_page_path }}">Next →</a>
+        <li>
+            <a class="clickable" href="{{ paginator.next_page_path }}"><strong>Next →</strong></a>
         </li>
         {% endif %}
     </ul>
