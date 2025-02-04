@@ -92,6 +92,7 @@ And on the other side of things, there are things developers can do in C and C++
 
 There will always be a place for "unsafe" languages. Whether its embedded solutions where every byte matters, games where latency is the biggest concern or legacy systems that would be too much of hassle to replace, C and C++ will continue to be employed. It is the responsibility of the developers, in any language, to make sure memory safety is upheld. Some languages make safety implicit like C# or explicit like Rust. Others require the developer to take an active role in memory safety. As for the future legality of "unsafe" languages, do not read too much into this post's title. It is just click bait after all.
 
+
 [^1]: *Back to the Building Blocks: A Path Toward Secure and Measurable Software*. PDF file. February 23rd, 2024. https://commons.wikimedia.org/wiki/File:Back_to_the_Building_Blocks_-_A_Path_Toward_Secure_and_Measurable_Software.pdf
 [^2]: Spafford, Eugene H. *The Internet Worm Program: An Analysis*. PDF File.  December 8th, 1998. https://spaf.cerias.purdue.edu/tech-reps/823
 [^3]: Wang, Mengzhi. PDF file. February 18th, 2001. https://www.cs.cmu.edu/afs/cs/academic/class/15213-s02/www/applications/recitation/recitation4/A/r04-A-4up.pdf
