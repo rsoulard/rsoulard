@@ -24,6 +24,10 @@
             padding: 0.5rem;
         }
     }
+
+    p {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (min-width: map.get(variables.$breakpoints, "md")) {

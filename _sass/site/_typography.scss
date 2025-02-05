@@ -79,12 +79,16 @@ h6 {
 p {
     font-family: $font-monospaced;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
+    font-size: 1rem;
     color: colors.$foreground-color;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 0px 8px;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.12rem;
 }
 
 .text-center {
