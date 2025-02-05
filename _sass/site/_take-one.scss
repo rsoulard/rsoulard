@@ -17,7 +17,7 @@
         padding-top: none;
 
         > a {
-            padding: 8px 0px;
+            padding: 8px 8px;
             display: block;
             color: colors.$foreground-color;
             background-color: colors.$background-color;
@@ -39,6 +39,10 @@
             transition: all .3s ease-in-out;
             transform: translate3d(5px, -5px, 0px);
             box-shadow: -5px 5px  map.get(colors.$theme-colors, 'alabaster');
+        }
+
+        p {
+            margin-bottom: 1rem;
         }
     }
 }

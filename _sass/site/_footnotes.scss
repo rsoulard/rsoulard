@@ -1,0 +1,15 @@
+@use "colors";
+
+.footnotes {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+a.footnote, a.reversefootnote {
+    padding-left: 5px;
+    color: colors.$foreground-color;
+}
+
+a.footnote:hover,  a.reversefootnote:hover {
+    color: colors.$hover-color;
+}
