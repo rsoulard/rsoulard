@@ -10,6 +10,9 @@ code {
   background-color: $background;
   margin-bottom: 2rem;
 
+  overflow: auto;
+  white-space: nowrap;
+
   .hll {
     background-color: #49483e;
   }
