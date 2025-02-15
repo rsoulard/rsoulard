@@ -13,6 +13,10 @@
 
 @use "colors";
 
+html {
+    scrollbar-width: none;
+}
+
 body {
     margin: 0;
 }

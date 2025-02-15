@@ -5,7 +5,11 @@
     function setNavLinkActive() {
         var pathName = window.location.pathname.match(regex);
         var navLinks = document.querySelectorAll(`a[href='/${pathName != null ? pathName[1] : ''}']`);
-        navLinks[0].className += " active";
+
+        if (Array.isArray(navLinks))
+        {
+            navLinks[0].className += " active";
+        }
     }
 </script>
 
