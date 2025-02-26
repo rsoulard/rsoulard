@@ -7,6 +7,8 @@ date:   2025-02-26 10:44:00 -0500
 # Should A Programming Language be Illegal?
 A shallow dive into software exploits and memory safety.
 
+<!--more-->
+
 Last year, the United States government published a document titled *Back to the Building Blocks: A Path Toward Secure and Measurable Software*[^1]. Soon after its publication the internet was a buzz with rumors and jokes that the United States government would put a ban on the C programming language and its offshoot C++. While both languages are mentioned by name, the document does not outline any plans to make their use illegal. The document's purpose is more in line with encouraging the government, and contractors, to use programming languages that feature better memory safety by default. But why mention these programming languages specifically by name? What makes C and C++ unsafe in terms of memory and should we follow the government's choice and reduce our usage of them?
 
 # Memory Safety
