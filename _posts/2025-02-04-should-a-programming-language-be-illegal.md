@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Should a Programming Language Be Illegal?"
-date:   2025-02-26 10:44:00 -0500
+date:   2025-02-26
 ---
 
 A shallow dive into software exploits and memory safety.
