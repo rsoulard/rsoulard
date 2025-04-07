@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Make an Application"
-date:   2025-04-07 13:34:00 -0500
+date:   2025-04-07
 ---
 
 Understanding why software fails to meet expectations.
